@@ -1,0 +1,136 @@
+package datatypesAndVariables;
+
+public class VariablesExample {
+
+// Employee Information...
+
+	public void employee() {
+		byte emplId = 10;
+		short emplWeight = 80;
+		int emplCabinNo = 1930;
+		long emplContactNo = 8010553084l;
+		double emplSalary = 58000.500;
+		float emplHeight = 185.80f;
+		char emplGread = 'A';
+		boolean emplPresent = true;
+		String emplName = "Vishal Kachare";
+		String emplPancardNo = "854857KLM74";
+
+		System.out.println("\n-->Following are the Employee Information...");
+
+		System.out.println("\nEmployee Name: " + emplName);
+		System.out.println("Employee Id: " + emplId);
+		System.out.println("Employee Cabin Number: " + emplCabinNo);
+		System.out.println("Employee Weight: " + emplWeight);
+		System.out.println("Employee Contact Number: " + emplContactNo);
+		System.out.println("Employee Height: " + emplHeight);
+		System.out.println("Employee Pan Number: " + emplPancardNo);
+		System.out.println("Employee Salary: " + emplSalary);
+		System.out.println("Employee Gread: " + emplGread);
+		System.out.println("Employee are present today: " + emplPresent);
+	}
+
+	// Student Information...
+
+	public void student() {
+		byte studId = 102;
+		short studWeight = 70;
+		int studRollNo = 1110;
+		long studContactNo = 8010553084l;
+		double studFees = 80000.500;
+		float studHeight = 184.80f;
+		char studGread = 'A';
+		boolean studPresent = true;
+		String studName = "Vishal Kachare";
+		String studPancardNo = "854857KLM74";
+
+		System.out.println("\n-->Following are the Studnet Information...");
+
+		System.out.println("\nStudnet Name: " + studName);
+		System.out.println("Studnet Id: " + studId);
+		System.out.println("Studnet Roll Number: " + studRollNo);
+		System.out.println("Studnet Weight: " + studWeight);
+		System.out.println("Studnet Contact Number: " + studContactNo);
+		System.out.println("Studnet Height: " + studHeight);
+		System.out.println("Studnet Pan Number: " + studPancardNo);
+		System.out.println("Studnet Fees: " + studFees);
+		System.out.println("Studnet Gread: " + studGread);
+		System.out.println("Studnet are present today: " + studPresent);
+	}
+
+	// Library Information...
+
+	public void library() {
+
+		byte libId = 20;
+		int libNo = 1111;
+		double libFees = 1000.500;
+		boolean libOpen = true;
+		String libName = "Wachnalay";
+
+		System.out.println("\n-->Following are the Library Information...");
+
+		System.out.println("\nLibrary Name: " + libName);
+		System.out.println("Library Id: " + libId);
+		System.out.println("Library Number: " + libNo);
+		System.out.println("Library Fees: " + libFees);
+		System.out.println("Library are Open today: " + libOpen);
+
+	}
+
+	// Vehicle Information...
+
+	public void vehicle() {
+		byte vehId = 10;
+		int vehNo = 2748;
+		double vehPrice = 2000000.700;
+		boolean blackColor = true;
+		String vehName = "Kawasaki Ninja H2R";
+		String vehSpeed = "300 km/hrs";
+
+		System.out.println("\n-->Following are the Vehicle Information...");
+
+		System.out.println("\nVehicle Name: " + vehName);
+		System.out.println("Vehicle Id: " + vehId);
+		System.out.println("Vehicle Number: " + vehNo);
+		System.out.println("Vehicle Price: " + vehPrice);
+		System.out.println("Vehicle Speed: " + vehSpeed);
+		System.out.println("Vehicle color Black: " + blackColor);
+
+	}
+
+	// Hospital Information...
+
+	public void hospital() {
+		byte hospId = 100;
+		int hospNo = 0021;
+		double hospCharge = 20000.500;
+		boolean hospOpen = true;
+		String hospName = "Sanjivani";
+		String hospAddress = "Satara";
+
+		System.out.println("\n-->Following are the Hospital Information...");
+
+		System.out.println("\nHospital Name: " + hospName);
+		System.out.println("Hospital Id: " + hospId);
+		System.out.println("Hospital Number: " + hospNo);
+		System.out.println("Hospital Charges: " + hospCharge);
+		System.out.println("Hospital are Open: " + hospOpen);
+		System.out.println("Hospital Address: " + hospAddress);
+	}
+
+	public static void main(String[] args) {
+
+		System.out.println("--->Following are the Local Variable Examples: ");
+
+		VariablesExample obj = new VariablesExample();
+
+		obj.employee();
+		obj.student();
+		obj.library();
+		obj.vehicle();
+		obj.hospital();
+
+	}
+
+}

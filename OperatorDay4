@@ -1,0 +1,13 @@
+public class OperatorDay4 {
+
+	public static void main(String[] args) {
+
+		int decimal = 19;
+		System.out.println(Integer.toBinaryString(decimal));
+
+		4 ^ 3
+
+
+	}
+
+}

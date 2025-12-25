@@ -1,0 +1,306 @@
+1. Write a Java program that takes an integer (1â€“7) and prints the corresponding day name (e.g., 1 â†’ Monday)
+
+public class DayOfWeek
+ {
+    public static void main(String[] args) {
+      
+      //  System.out.print("Enter a number (1-7): ");
+        int num = 1();
+
+        switch (day) 
+{
+            case 1:
+                   System.out.println("Sunday"); 
+                    break;
+            case 2:
+                   System.out.println("Monday");
+                    break;
+            case 3: 
+                   System.out.println("Tuesday");
+                    break;
+            case 4: 
+                   System.out.println("Wednesday");
+                    break;
+            case 5: 
+                   System.out.println("Thursday");
+                    break;
+            case 6: 
+                   System.out.println("Friday"); 
+                    break;
+            case 7: 
+                  System.out.println("Saturday"); 
+                    break;
+            default: 
+                  System.out.println("Invalid Input");
+        }
+    }
+}
+
+
+2. Accept a number (1â€“12) from the user and print the name of the month using a switch case.
+
+public class MonthName
+ {
+    public static void main(String[] args) {
+       
+      //  System.out.print("Enter month number (1-12): ");
+        int month = 12();
+
+        switch (month) 
+{
+            case 1: 
+                   System.out.println("January"); 						 break;
+            case 2:  							 	 	   System.out.println("February");
+ 			 break;
+            case 3:      		
+ 		   System.out.println("March");  						 break;
+            case 4: 		
+		    System.out.println("April"); 						 break;
+            case 5: 
+ 		    System.out.println("May");  						 break;
+            case 6: 
+ 		    System.out.println("June"); 
+  			 break;
+            case 7: 
+    		   System.out.println("July"); 
+ 			 break;
+            case 8: 
+ 		   System.out.println("August");
+ 		         break;
+            case 9: 
+    		   System.out.println("September");
+ 		         break;
+            case 10: 
+ 		    System.out.println("October");
+  		         break;
+            case 11: 
+ 		     System.out.println("November"); 
+ 		         break;
+            case 12: 
+ 		    System.out.println("December"); 
+ 		         break;
+            default:
+                    System.out.println("Invalid Month Number");
+        }
+    }
+}
+
+
+3. Accept two numbers and an operator (+, -, *, /) from the user and perform the operation using a switch case.
+
+public class Calculator 
+{
+    public static void main(String[] args) {
+        
+      //  System.out.print("Enter two numbers: ");
+        double num1 = sc.nextDouble();
+        double num2 = sc.nextDouble();
+
+        System.out.print("Enter operator (+, -, *, /): ");
+        char operator = sc.next().charAt(0);
+
+        switch (operator) {
+            case '+': System.out.println("Result: " + (num1 + num2));  				break;
+            case '-': System.out.println("Result: " + (num1 - num2));  				break;
+            case '*': System.out.println("Result: " + (num1 * num2));  				break;
+            case '/': 
+                if(num2 != 0) System.out.println("Result: " + (num1 / num2));
+                else System.out.println("Cannot divide by zero");
+                break;
+            default: System.out.println("Invalid Operator");
+        }
+    }
+}
+
+
+4. Take a grade character (A, B, C, D, F) as input and print a message:
+A â†’ Excellent
+B â†’ Good
+C â†’ Average
+D â†’ Poor
+F â†’ Fail
+
+
+
+public class GradeMessage 
+{
+    public static void main(String[] args) {
+        
+     //   System.out.print("Enter grade (A, B, C, D, F): ");
+        char grade = 'B';
+
+        switch (grade) 
+{
+            case 'A': 
+ 		System.out.println("Range -> 75 to 100 ->Excellent");  			 break;
+            case 'B':
+ 		System.out.println("Range -> 65 to 75 ->Good"); 
+ 		break;
+            case 'C': 
+ 		System.out.println("Range -> 45 to 65 ->Average");
+ 	        break;
+            case 'D': 
+  		System.out.println("Range -> 35 to 45 ->Poor"); 
+ 		break;
+            case 'F': 
+  		System.out.println("Fail -> Better Luck Next Time...!"); 
+ 		break;
+            default: 
+ 		System.out.println("Invalid Input");
+        }
+    }
+}
+
+
+5. Input color name (Red, Yellow, or Green) and print the appropriate action:
+
+Red â†’ Stop
+Yellow â†’ Ready
+Green â†’ Go
+
+public class TrafficLight 
+{
+    public static void main(String[] args) {
+        
+       // System.out.print("Enter color (Red, Yellow, Green): ");
+        String color = Green();
+
+        switch (color) { 
+
+            case "Red":
+ 		 System.out.println("Stop"); 
+ 		break;
+            case "Yellow": 
+ 		System.out.println("Ready");  	
+ 		break;
+            case "Green": 
+ 		System.out.println("Go"); 
+ 		break;
+            default: 
+ 		System.out.println("Invalid Input");
+        }
+    }
+}
+
+
+6. Take a single character input and check whether it is a vowel or consonant using a switch statement.
+
+public class VowelCheck 
+{
+    public static void main(String[] args) {
+        
+       // System.out.print("Enter a character: ");
+        char ch = 'a';
+
+        if (Character.isLetter(ch))
+ {
+            switch (ch)
+ {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    System.out.println("Vowel");
+                    break;
+                default:
+                    System.out.println("Consonant");
+            }
+        } 
+else 
+{
+            System.out.println("Not in alphabet");
+        }
+    }
+}
+
+
+7. Use a switch statement to check if a number is even or odd (hint: use number % 2 as the expression)
+
+public class EvenOddSwitch 
+{
+    public static void main(String[] args) {
+       
+       // System.out.print("Enter a number: ");
+        int num = '1';
+
+        switch (num % 2) {
+            case 0: 
+ 		System.out.println("Even Number"); 
+ 		break;
+            case 1:  	
+ 		break;
+            case -1: 
+                System.out.println("Odd Number"); 
+ 		break;
+        }
+    }
+}
+
+
+8. Accept a category type (Domestic, Commercial, Industrial) and print the electricity rate per unit using a switch case.
+
+public class ElectricityRate
+ {
+    public static void main(String[] args) {
+        
+      //  System.out.print("Enter category (Domestic, Commercial, Industrial): ");
+        String category = 'Commercial';
+
+        switch (category.toLowerCase()) {
+            case "domestic": 
+                System.out.println("Rate: ₹5 per unit"); 
+                break;
+            case "commercial": 
+                System.out.println("Rate: ₹8 per unit"); 
+                break;
+            case "industrial": 
+                System.out.println("Rate: ₹10 per unit"); 
+                break;
+            default: 
+                System.out.println("Unknown Category");
+        }
+    }
+}
+
+
+9. Take month number (1â€“12) and print the corresponding season:
+
+Decâ€“Feb â†’ Winter
+Marâ€“May â†’ Summer
+Junâ€“Aug â†’ Monsoon
+Sepâ€“Nov â†’ Autumn
+
+public class SeasonFinder 
+{
+    public static void main(String[] args) {
+       
+       // System.out.print("Enter month number (1-12): ");
+        int month = '7';
+
+        switch (month) {
+            case 12 Dec:
+            case 1 Jan:
+            case 2 Feb:
+                System.out.println("Winter");
+                break;
+            case 3 Mar:
+            case 4 Apr:
+            case 5 May:
+                System.out.println("Summer");
+                break;
+            case 6 Jun:
+            case 7 Jul:
+            case 8 Aug:
+                System.out.println("Monsoon");
+                break;
+            case 9  Sep:
+            case 10 Out:
+            case 11 Nov:
+                System.out.println("Autumn");
+                break;
+            default:
+                System.out.println("Invalid Month");
+        }
+    }
+}

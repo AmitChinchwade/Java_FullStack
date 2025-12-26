@@ -4,8 +4,7 @@ public class DayOfWeek
  {
     public static void main(String[] args) {
       
-      //  System.out.print("Enter a number (1-7): ");
-        int num = 1();
+             int num = 1();
 
         switch (day) 
 {
@@ -43,8 +42,7 @@ public class MonthName
  {
     public static void main(String[] args) {
        
-      //  System.out.print("Enter month number (1-12): ");
-        int month = 12();
+             int month = 12();
 
         switch (month) 
 {
@@ -92,8 +90,7 @@ public class Calculator
 {
     public static void main(String[] args) {
         
-      //  System.out.print("Enter two numbers: ");
-        double num1 = sc.nextDouble();
+             double num1 = sc.nextDouble();
         double num2 = sc.nextDouble();
 
         System.out.print("Enter operator (+, -, *, /): ");
@@ -126,7 +123,7 @@ public class GradeMessage
 {
     public static void main(String[] args) {
         
-     //   System.out.print("Enter grade (A, B, C, D, F): ");
+     
         char grade = 'B';
 
         switch (grade) 
@@ -162,8 +159,7 @@ public class TrafficLight
 {
     public static void main(String[] args) {
         
-       // System.out.print("Enter color (Red, Yellow, Green): ");
-        String color = Green();
+               String color = Green();
 
         switch (color) { 
 
@@ -189,8 +185,7 @@ public class VowelCheck
 {
     public static void main(String[] args) {
         
-       // System.out.print("Enter a character: ");
-        char ch = 'a';
+               char ch = 'a';
 
         if (Character.isLetter(ch))
  {
@@ -221,8 +216,7 @@ public class EvenOddSwitch
 {
     public static void main(String[] args) {
        
-       // System.out.print("Enter a number: ");
-        int num = '1';
+              int num = '1';
 
         switch (num % 2) {
             case 0: 
@@ -244,7 +238,6 @@ public class ElectricityRate
  {
     public static void main(String[] args) {
         
-      //  System.out.print("Enter category (Domestic, Commercial, Industrial): ");
         String category = 'Commercial';
 
         switch (category.toLowerCase()) {
@@ -271,36 +264,64 @@ Marâ€“May â†’ Summer
 Junâ€“Aug â†’ Monsoon
 Sepâ€“Nov â†’ Autumn
 
-public class SeasonFinder 
-{
-    public static void main(String[] args) {
-       
-       // System.out.print("Enter month number (1-12): ");
-        int month = '7';
+package switchCaseExamples;
 
-        switch (month) {
-            case 12 Dec:
-            case 1 Jan:
-            case 2 Feb:
-                System.out.println("Winter");
-                break;
-            case 3 Mar:
-            case 4 Apr:
-            case 5 May:
-                System.out.println("Summer");
-                break;
-            case 6 Jun:
-            case 7 Jul:
-            case 8 Aug:
-                System.out.println("Monsoon");
-                break;
-            case 9  Sep:
-            case 10 Out:
-            case 11 Nov:
-                System.out.println("Autumn");
-                break;
-            default:
-                System.out.println("Invalid Month");
-        }
-    }
+public class PrintNaturrSeasons {
+
+	public static void main(String[] args) {
+
+		int month = 12;
+		
+		switch(month)
+		{
+		case 12:
+			System.out.println("December in Winter Season...");
+			break;
+			
+		case 1:
+			System.out.println("January in Winter Season...");
+			break;
+			
+		case 2:
+			System.out.println("February in Winter Season...");
+			break;
+			
+		case 3:
+			System.out.println("March in Summer Season...");
+			break;
+			
+		case 4:
+			System.out.println("April in Summer Season...");
+			break;
+			
+		case 5:
+			System.out.println("May in Summer Season...");
+			break;
+			
+		case 6:
+			System.out.println("June in Monsoon Season...");
+			break;
+			
+		case 7:
+			System.out.println("Jully in Monsoon Season...");
+			break;
+			
+		case 8:
+			System.out.println("Auguest in Monsoon Season...");
+			break;
+			
+		case 9:
+			System.out.println("September in Autumn Season...");
+			break;
+			
+		case 10:
+			System.out.println("Octomber in Autumn Season...");
+			break;
+			
+		case 11:
+			System.out.println("November in Autumn Season...");
+			break;
+		}
+	}
+
 }
